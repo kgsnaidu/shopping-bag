@@ -1,0 +1,438 @@
+h1 {
+    font-size: 4.5em;
+    font-weight: lighter;
+    font-family: "Poppins";
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.capital {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.cart-items-table {
+    list-style: none;
+    padding: 0px;
+}
+
+.cart-items-table > .header {
+    font-weight: bold !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.cart-items-table > li:first-child {
+    border-bottom: 9px solid #dddddd !important;
+    border-top: 1px solid #dddddd !important;
+}
+
+.cart-items-table > li {
+    border-bottom: 1px solid #dddddd !important;
+}
+
+.cart-items-table > li:last-child {
+    border-bottom: 9px solid #dddddd !important;
+}
+
+.cart-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 0px;
+}
+
+.item-info {
+    font-size: 10pt;
+    color: grey;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.item-cost {
+    font-weight: bold;
+    font-size: 15pt;
+    padding-right: 0px;
+    text-align: right;
+}
+
+.item-cost .original-cost {
+    font-size: 13pt;
+    color: #DDD;
+    text-decoration: line-through;
+    text-decoration-color: #DDD;
+}
+
+.item-size,
+item-qty {
+    text-align: center;
+}
+
+.item-price-head {
+    text-align: right;
+    padding-right: 0px !important;
+}
+
+.item-size-head,
+.item-qty-head {
+    text-align: center;
+}
+
+.item-qty > input {
+    font-size: 12pt !important;
+    text-align: center;
+    line-height: 1;
+}
+
+.item-actions {
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin-top: 45px;
+}
+
+.item-actions li {
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-outline {
+    color: black;
+    background: none;
+    padding-left: 0px;
+    padding-right: 15px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.item-actions > li:last-child > .btn-outline {
+    padding-right: 0px;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+    color: black;
+    border-color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+li.divider {
+    border-left: solid grey 1px;
+    padding-right: 15px;
+}
+
+#payment-help .help {
+    padding-left: 0px;
+}
+
+.help > h3 {
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: inherit;
+    padding-bottom: 20px;
+}
+
+.help > p {
+    padding-bottom: 20px;
+}
+
+.help > p > a:not(.phone) {
+    text-decoration: underline;
+}
+
+.help > p > a {
+    word-spacing: 2pt;
+    font-weight: bold;
+    font-size: 10pt;
+    color: grey;
+}
+
+#promotion {
+    margin-top: 20px;
+}
+
+#promotion .title {
+    padding-left: 0px;
+}
+
+.cost-calculation {
+    list-style: none;
+    padding: 0px;
+    margin-top: 45px;
+}
+
+.cost-calculation > li:first-child {
+    border-top: 9px solid #dddddd !important;
+}
+
+.cost-calculation > li:last-child {
+    border-bottom: 9px solid #dddddd !important;
+    border-top: 1px solid #dddddd !important;
+}
+
+.cost-calculation > li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.cost-calculation > li > .cost-component {
+    font-weight: bold;
+    font-size: 12pt;
+    display: inline;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.cost-calculation > li > .cost-component-value {
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.cost-component > .promo-code {
+    font-weight: 900;
+    font-size: 17pt;
+}
+
+.cost-component > .info {
+    font-size: 10pt;
+    color: grey;
+    margin: 0px;
+    text-transform: none;
+}
+
+.cost-component-total {
+    font-size: 19pt !important;
+}
+
+.cost-component-total-value {
+    font-size: 25pt !important;
+    font-weight: 900;
+    vertical-align: top;
+}
+
+.checkout-actions {
+    padding-top: 20px;
+}
+
+.checkout-button-container {
+    text-align: right;
+    padding: 0;
+}
+
+.continue-button-container {
+    text-align: right;
+    padding: 0;
+}
+
+.continue-button-container > .btn-link {
+    color: inherit;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.secure-payment > .info {
+    color: grey;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+    text-transform: none;
+    text-align: right;
+}
+
+.secure-payment > .info::before {
+    content: url("../assets/lock.jpg");
+    padding: 10px;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: sub;
+}
+
+.small-components {
+    margin-top: 20px;
+}
+
+.small-components .qty {
+    padding-left: 0px;
+}
+
+.small-components .cost {
+    margin-top: 10px;
+    padding-left: 0px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.small-components .cost .original-cost {
+    font-size: 13pt;
+    color: #DDD;
+    text-decoration: line-through;
+    text-decoration-color: #DDD;
+}
+
+.small-components input {
+    width: 40px;
+    display: inline;
+    text-align: center;
+}
+
+.modal-body.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-item-details {
+    border-top: 9px solid #dddddd !important;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.modal-item-details .name {
+    display: block;
+    font-size: 15pt;
+}
+
+.modal-item-details .cost {
+    display: block;
+    font-weight: bold;
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+
+.modal-item-details .cost .original-cost {
+    font-size: 10pt;
+    color: #DDD;
+    text-decoration: line-through;
+    text-decoration-color: #DDD;
+}
+
+.modal-item-details .size-cost {
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.modal-item-image {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.modal-header .close {
+    font-size: 15pt;
+    font-size: 24pt;
+    font-weight: 100;
+}
+
+.input-group-addon {
+    background: none;
+}
+
+.currency {
+    vertical-align: super;
+    font-size: 7pt;
+}
+
+.cost-component-value .currency {
+    font-size: 8pt;
+}
+
+.cost-component-total-value .currency {
+    font-size: 12pt;
+}
+
+.modal-item-details .cost .currency {
+    font-size: 12pt;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+@media only screen and (max-width: 768px) {
+    .item-head-count {
+        text-align: right;
+        font-weight: bold;
+        font-size: 15pt;
+    }
+    .item-head {
+        font-weight: bold;
+        font-size: 15pt;
+    }
+    #promotion {
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dddddd !important;
+    }
+    #promotion .title {
+        margin-bottom: 15px;
+    }
+    .cost-calculation {
+        list-style: none;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 40px;
+    }
+    .cost-calculation > li:first-child {
+        border-top: none !important;
+        padding-top: 5px;
+    }
+    .cost-calculation > li:last-child {
+        border-bottom: none !important;
+        border-top: 1px solid #dddddd !important;
+    }
+    .cost-component-total {
+        font-size: 12pt !important;
+    }
+    .checkout-actions {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .checkout-actions > div {
+        text-align: center;
+    }
+    .continue-button-container > .btn-link {
+        text-align: center;
+    }
+    .secure-payment > .info {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #promotion input {
+        width: 120px;
+    }
+}
