@@ -1,0 +1,80 @@
+<div class="col-xs-6 item-image col-sm-3">
+    <img src='assets/T<%= p_id %>.jpg' class="responsive" />
+</div>
+
+<div class="col-xs-6">
+    <p class="item-name capital"><b><%= p_name %></b></p>
+    <p class="item-info">Style #:
+        <span class="capital"><%= p_style %></span>
+    </p>
+    <p class="item-info capitalize">Colour:
+        <%= p_selected_color.name %>
+    </p>
+    <p class="item-info visible-xs capital">Size:
+        <%= p_selected_size.code %>
+    </p>
+
+    <ul class="item-actions hidden-xs">
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline button-edit">Edit</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline button-remove">&times; Remove</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline">Save For Later</a>
+        </li>
+    </ul>
+
+    <div class="visible-xs small-components">
+        <div class="col-sm-1 qty">
+            QTY :
+            <input type='number' class="form-control input-sm input-qty" value="<%= p_quantity %>" size="1" min='1' />
+        </div>
+
+        <div class="col-sm-1 cost">
+            <% if(p_price != p_originalprice) { %>
+                <span class="original-cost">
+                    <span class="currency"><%= c_currency %></span><%= parseFloat(p_quantity*p_originalprice).toFixed(2) %>
+                </span> 
+            <% }%>
+            <span class="currency"><%= c_currency %></span><%= parseFloat(p_quantity*p_price).toFixed(2) %>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-sm-1 hidden-xs item-size capital">
+    <%= p_selected_size.code %>
+</div>
+
+<div class="col-sm-1 hidden-xs item-qty">
+    <input type='number' class="form-control input-sm input-qty" value="<%= p_quantity %>" size="1" min='1' />
+</div>
+
+<div class="col-sm-1 hidden-xs item-cost">
+    <% if(p_price != p_originalprice) { %>
+        <span class="original-cost">
+        <span class="currency"><%= c_currency %></span><%= parseFloat(p_quantity*p_originalprice).toFixed(2) %>
+        </span>
+    <% }%>
+    <span class="currency"><%= c_currency %></span><%= parseFloat(p_quantity*p_price).toFixed(2) %>
+</div>
+
+<div class="visible-xs col-xs-12 container">
+    <ul class="item-actions">
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline button-edit">Edit</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline button-remove">&times; Remove</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+            <a href='javascript: void(0);' class="btn btn-outline">Save For Later</a>
+        </li>
+    </ul>
+</div>

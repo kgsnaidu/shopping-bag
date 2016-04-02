@@ -1,0 +1,63 @@
+<%
+   var sizes = p_available_options.sizes;
+   var colors = p_available_options.colors;
+%>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <div class="modal-item-image">
+                        <img src='assets/T<%= p_id %>.jpg' class="responsive" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <div class="modal-item-details capital">
+                        <span class="name"><%= p_name %></span>
+                        <span class="cost">
+                            <% if(p_price != p_originalprice) { %>
+                                <span class="original-cost">
+                                    <span class="currency"><%= c_currency %></span>
+                                    <%= p_quantity*p_originalprice %>
+                                </span> 
+                            <% }%>
+                            <span class="currency"><%= c_currency %></span>
+                            <%= p_price %>
+                        </span>
+                            <div class="row size-cost">
+                                <div class="col-xs-6">
+                                    <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">Size:</span>
+                                    <select class="form-control capital" id='item-modal-size'>
+                                        <% _.each(sizes, function(size){ %>
+                                            
+                                           <option value="<%= size.name %>"
+                                                   <% if(size.code==p_selected_size.code){%>
+                                                        <%= "selected='selected'" %>
+                                                   <% } %>
+                                            >
+                                                <%= size.code %>
+                                            </option>
+                                            
+                                        <%   }) %>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">Qty:</span>
+                                    <input type='number' id='item-modal-qty' value="<%= p_quantity %>" class="form-control" min='1' />
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-block" id='button-edit-item'>EDIT</button>
+                            <button class="btn btn-link btn-block">See product details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->

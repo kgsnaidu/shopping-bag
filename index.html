@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="container">
+    <header class="row hidden-xs">
+        <hgroup>
+            <h1 class="capital">Your Shopping Bag</h1>
+        </hgroup>
+    </header>
+
+    <!-- Cart Items -->
+    <section id='cart-items' class="row">
+
+    </section>
+
+    <section id="payment-help" class="row">
+        <aside class="help col-sm-4 hidden-xs">
+            <h3>Need help or have questions?</h3>
+            <p>Call Customer Service at
+                <a href="tel:1-800-555-5555" class="phone">1-800-555-5555</a>
+            </p>
+            <p><a href="javascript: void(0);">Chat with one of our stylists</a></p>
+            <p><a href="javascript: void(0);">See return &amp; exchange policy</a></p>
+        </aside>
+
+        <section class="col-sm-8">
+
+            <div class="row" id="promotion">
+                <div class="col-sm-6 capital title">
+                    Enter Promotion Code or Gift Card
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-inline row col-xs-offset-1">
+
+                        <div class="form-group col-xs-6 col-sm-7 col-md-5 col-md-offset-4">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <a href='javascript: void(0);' class="btn btn-default col-xs-4 col-sm-5 col-md-3">APPLY</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- cart calculation -->
+            <div class="row" id="cost-calculation">
+                
+            </div>
+
+            <div class='checkout-actions row'>
+                <div class="col-sm-3 col-sm-push-9 hidden-xs checkout-button-container">
+                    <button class="btn btn-primary btn-md capital">Checkout</button>
+                </div>
+                <div class="col-sm-9 col-sm-pull-3 hidden-xs continue-button-container">
+                    <button class="btn btn-link btn-md capital">Continue Shopping</button>
+                </div>
+
+                <div class="visible-xs checkout-button-container">
+                    <button class="btn btn-primary btn-block btn-lg capital">Checkout</button>
+                </div>
+                <div class="visible-xs continue-button-container">
+                    <button class="btn btn-link btn-block btn-lg capital">Continue Shopping</button>
+                </div>
+            </div>
+
+            <div class="secure-payment row">
+                <p class="info">Secure checkout. Shopping is always safe &amp; secure</p>
+            </div>
+
+        </section>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+<script src="./js/lib/require.js" data-main="./js/main"></script>
+
+</html>

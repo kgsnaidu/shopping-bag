@@ -1,0 +1,30 @@
+<ul class="cost-calculation">
+    <li>
+        <span class="cost-component-value pull-right"><span class='currency'>$</span><%= parseFloat(totalPrice).toFixed(2) %></span>
+        <p class="cost-component">Subtotal</p>
+    </li>
+    <li>
+        <span class="cost-component-value pull-right">- <span class='currency'>$</span><%= parseFloat(7).toFixed(2) %></span>
+        <p class="cost-component">Promotion code <span class='promo-code'>JF10</span> applied</p>
+    </li>
+    <li>
+        <span class="cost-component-value pull-right">Free</span>
+        <p class="cost-component">
+            Estimated Shipping*
+            <br/>
+            <span class="info">
+                You qualify for free shipping 
+            </span>
+        </p>
+    </li>
+    <li>
+        <span class="cost-component-total-value pull-right"><span class='currency'>$</span><%= parseFloat(finalPrice).toFixed(2) %></span>
+        <p class="cost-component cost-component-total">
+            Estimated Total
+            <br/>
+            <span class="info">
+                Tax will be applied during checkout 
+            </span>
+        </p>
+    </li>
+</ul>
